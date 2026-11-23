@@ -1,3 +1,11 @@
+
+
+
+
+
+// ---------------------------------------------------------------------------------------------
+// THIS IS WAVESHARE'S SAMPLE CODE FOR HELLOWORLD, modified for my purposes and experimentation!
+// ---------------------------------------------------------------------------------------------
 #include <Arduino.h>
 #include "Arduino_GFX_Library.h"
 #include "pin_config.h"
@@ -10,6 +18,7 @@ Arduino_DataBus *bus = new Arduino_ESP32QSPI(
   LCD_CS /* CS */, LCD_SCLK /* SCK */, LCD_SDIO0 /* SDIO0 */, LCD_SDIO1 /* SDIO1 */,
   LCD_SDIO2 /* SDIO2 */, LCD_SDIO3 /* SDIO3 */);
 
+// sets up the 
 Arduino_GFX *gfx = new Arduino_CO5300(bus, LCD_RESET /* RST */,
                                       0 /* rotation */,  LCD_WIDTH, LCD_HEIGHT,
                                       22 /* col_offset1 */,
